@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css
+
+
+
+    "
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css"
+      integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>LandHunt</title>
+  </head>
+  <body>
+    <!-- MAIN MENU -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <div class="container">
+        <img
+          src="/assets/img/logo.png"
+          alt="Logo"
+          width="100"
+          height="100"
+          class="d-inline-block align-text-top logo-img"
+        />
+        <h1>
+          <a class="navbar-brand" href="#">LandHunt</a>
+        </h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ms-auto">
+            <a
+              class="LandHunt-nav-link nav-link active"
+              aria-current="page"
+              href="#Search-form"
+              >Search</a
+            >
+            <a class="LandHunt-nav-link nav-link" href="#services">Services</a>
+            <a class="LandHunt-nav-link nav-link" href="#recommends"
+              >Recommends</a
+            >
+            <a class="LandHunt-nav-link nav-link" href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- SEARCH FORM -->
+    <div id="search-form" class="hero">
+      <div class="container">
+        <form action="index.html" class="search-form">
+          <div class="form-group" style="flex: 100%">
+            <i class="fa fa-map-marker"></i>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Type Your Destination"
+            />
+          </div>
+          <div class="form-group">
+            <i class="fa fa-calendar"></i
+            ><input
+              type="text"
+              class="form-control"
+              id="inputCheckIn"
+              placeholder="Check In"
+            />
+          </div>
+          <div class="form-group">
+            <i class="fa fa-calendar"></i
+            ><input
+              type="text"
+              class="form-control"
+              id="inputCheckOut"
+              placeholder="Check Out"
+            />
+          </div>
+          <div class="form-group">
+            <i class="fa fa-bed"></i>
+            <select class="form-control">
+              <option value="">Rooms</option>
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+              <option value="1">4</option>
+              <option value="1">5</option>
+              <option value="1">6</option>
+              <option value="1">7</option>
+              <option value="1">8</option>
+              <option value="1">9</option>
+              <option value="1">10</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <i class="fa fa-user"></i>
+            <select class="form-control">
+              <option value="">Adults</option>
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+              <option value="1">4</option>
+              <option value="1">5</option>
+              <option value="1">6</option>
+              <option value="1">7</option>
+              <option value="1">8</option>
+              <option value="1">9</option>
+              <option value="1">10</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <i class="fa fa-user"></i>
+            <select class="form-control">
+              <option value="">Children</option>
+              <option value="1">1</option>
+              <option value="1">2</option>
+              <option value="1">3</option>
+              <option value="1">4</option>
+              <option value="1">5</option>
+              <option value="1">6</option>
+              <option value="1">7</option>
+              <option value="1">8</option>
+              <option value="1">9</option>
+              <option value="1">10</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <button type="submit" class="btn btn-primary">Check</button>
+          </div>
+        </form>
+        <p class="need-help">
+          Do you need any further assistance
+          <a href="#">Need Help?</a>
+        </p>
+      </div>
+    </div>
+
+    <!-- SUBSCRIBE -->
+    <section class="section-color">
+      <div class="container text-center">
+        <h2 class="section-title">We are here to help you</h2>
+        <p class="section-subtitle">Subscribe to get our newsletter</p>
+        <a href="#" class="btn btn-white">Subscibe newsletter</a>
+      </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 100 100"
+        preserveAspectRatio="none"
+        class="section-down-arrow"
+      >
+        <polygon points="0,0 100,0 50,50" style="fill: var(--color-primary)" />
+      </svg>
+      <div class="container">
+        <div class="row">
+          <!-- Article 1 -->
+          <article class="article col-lg-4">
+            <i class="fa fa-gavel article-icon"></i>
+            <h3 class="article-title">Legal Transaction Management</h3>
+            <p>
+              We provide comprehensive services for all legal transactions
+              related to rental properties. Whether you need assistance in
+              drafting and documenting lease agreements or negotiating and
+              arranging terms and conditions, our professional team will provide
+              the necessary support to ensure a smooth transaction in full
+              compliance with local laws and regulations.
+            </p>
+            <a href="#" class="btn btn-primary btn-fit">Contineo Reading</a>
+          </article>
+          <!-- Article 2 -->
+          <article class="article col-lg-4">
+            <i class="fa fa-plane article-icon"></i>
+            <h3 class="article-title">Travel Care and Insurance</h3>
+            <br /><br />
+            <p>
+              We offer our services to facilitate and secure your travel
+              arrangements. Whether you're looking for travel arrangements,
+              airline ticket bookings, hotel reservations, or travel insurance,
+              we are here to provide you with suitable and reliable solutions to
+              make your journey safe and comfortable.
+            </p>
+            <a href="#" class="btn btn-primary btn-fit">Contineo Reading</a>
+          </article>
+          <!-- Article 3 -->
+          <article class="article col-lg-4">
+            <i class="fa fa-life-ring article-icon"></i>
+            <h3 class="article-title">
+              Ensuring a Secure Environment within the Property
+            </h3>
+            <p>
+              We prioritize your safety and well-being within the property. We
+              ensure a safe and familiar environment for you and your family. We
+              provide security and safety services that include advanced
+              protection measures and secure access systems to ensure your
+              comfort and peace of mind within your rented home or property.
+            </p>
+            <a href="#" class="btn btn-primary btn-fit">Contineo Reading</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDER -->
+
+    <section class="section-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="level-slider">
+              <!-- Artiacle 1 -->
+              <article class="level-slider-item">
+                <img src="assets/img/image1.jpg" alt="" />
+                <div class="level-slider-item-container">
+                  <h3>House for Sale in Spain</h3>
+                  <p>
+                    A stunning Mediterranean-style house located in Spain. This
+                    spacious property offers 4 bedrooms and 3 bathrooms. The
+                    house boasts a modern kitchen, a cozy living room with a
+                    fireplace, and a beautiful backyard with a swimming pool.
+                    With its prime location near the beach and amenities, this
+                    house is a perfect retreat for those seeking a luxurious
+                    lifestyle.
+                  </p>
+                  <a href="" class="btn btn-primary btn-fit">More Info</a>
+                </div>
+              </article>
+
+              <!-- Artiacle 2 -->
+
+              <article class="level-slider-item">
+                <img src="assets/img/image2.jpg" alt="" />
+                <div class="level-slider-item-container">
+                  <h3>House for Rent in Australia</h3>
+                  <p>
+                    A contemporary house available for rent in Australia. This
+                    stylish property features 3 bedrooms and 2 bathrooms. It
+                    showcases an open-concept design with a spacious living
+                    area, a fully equipped kitchen, and a private outdoor patio.
+                    Situated in a desirable neighborhood, it offers convenient
+                    access to schools, parks, and shopping centers.
+                  </p>
+                  <a href="" class="btn btn-primary btn-fit">More Info</a>
+                </div>
+              </article>
+
+              <!-- Artiacle 3 -->
+
+              <article class="level-slider-item">
+                <img src="assets/img/image3.jpg" alt="" />
+                <div class="level-slider-item-container">
+                  <h3>House for Sale in Canada</h3>
+                  <p>
+                    A charming family home located in Canada. This cozy house
+                    offers 3 bedrooms and 2 bathrooms. It features a
+                    well-designed interior with a modern kitchen, a comfortable
+                    living room, and a backyard with a deck for outdoor
+                    entertaining. The property is situated in a peaceful
+                    neighborhood, close to schools, recreational facilities, and
+                    transportation.
+                  </p>
+                  <a href="" class="btn btn-primary btn-fit">More Info</a>
+                </div>
+              </article>
+
+              <!-- Artiacle 4 -->
+              <article class="level-slider-item">
+                <img src="assets/img/image4.jpg" alt="" />
+                <div class="level-slider-item-container">
+                  <h3>House for Rent in Germany</h3>
+                  <p>
+                    A contemporary townhouse available for rent in Germany. This
+                    stylish property offers 2 bedrooms and 1 bathroom. It
+                    showcases a sleek, minimalist design with an open-plan
+                    living area and a fully equipped kitchen. The townhouse is
+                    located in a vibrant neighborhood, with easy access to
+                    shops, restaurants, and public transportation.
+                  </p>
+                  <a href="" class="btn btn-primary btn-fit">More Info</a>
+                </div>
+              </article>
+
+              <!-- Artiacle 5 -->
+              <article class="level-slider-item">
+                <img src="assets/img/image5.jpg" alt="" />
+                <div class="level-slider-item-container">
+                  <h3>House for Sale in Brazil</h3>
+                  <p>
+                    A tropical paradise awaits in this house for sale in Brazil.
+                    With 5 bedrooms and 4 bathrooms, this spacious property
+                    offers ample living space. It features a modern kitchen, a
+                    large living room with high ceilings, and a private garden
+                    with a swimming pool. Located in a desirable area, it
+                    provides easy access to beaches and local attractions.
+                  </p>
+                  <a href="" class="btn btn-primary btn-fit">More Info</a>
+                </div>
+              </article>
+
+              <!-- Artiacle 6 -->
+              <article class="level-slider-item">
+                <img src="assets/img/image6.jpg" alt="" />
+                <div class="level-slider-item-container">
+                  <h3>House for Rent in Japan</h3>
+                  <p>
+                    Experience the beauty of Japanese architecture in this
+                    traditional house for rent in Japan. This authentic property
+                    offers 2 bedrooms and 1 bathroom. It showcases traditional
+                    tatami rooms, a serene garden, and a tea room for
+                    relaxation. Situated in a historic neighborhood, it provides
+                    a glimpse into Japan's rich cultural heritage.
+                  </p>
+                  <a href="" class="btn btn-primary btn-fit">More Info</a>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div id="recommends" class="star-places">
+              <div class="star-places-header">
+                <h3>Recommended Places</h3>
+                <p>Places that we recommend for you</p>
+              </div>
+
+              <div class="star-places-body">
+                <a href="#">
+                  <img
+                    src="assets/img/image3.jpg"
+                    alt="place Image"
+                    width="75px"
+                    height="75px"
+                  />
+                  <h4>Asia</h4>
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/img/image4.jpg"
+                    alt="place Image"
+                    width="75px"
+                    height="75px"
+                  />
+                  <h4>Africa</h4>
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/img/image5.jpg"
+                    alt="place Image"
+                    width="75px"
+                    height="75px"
+                  />
+                  <h4>Europe</h4>
+                </a>
+                <a href="#">
+                  <img
+                    src="assets/img/image6.jpg"
+                    alt="place Image"
+                    width="75px"
+                    height="75px"
+                  />
+                  <h4>America</h4>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- VIDEO -->
+    <section class="video">
+      <div class="video-overlay">
+        <i class="fa fa-play-circle video-control-play"></i>
+        <i class="fa fa-pause-circle video-control-pause"></i>
+      </div>
+      <div class="video-container">
+        <video class="level-video">
+          <source src="/assets/videos/video1.mp4" type="video/mp4" />
+          Your Video Don't Support The Video
+        </video>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="map-container">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3354217.80056369!2d39.00250449999999!3d34.8159205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1523e3b4324e255b%3A0x6a7ffc2c41283884!2z2KjYp9mG2YrYp9iz2Iwg2LPZiNix2YrYpw!5e0!3m2!1sar!2s!4v1711746556435!5m2!1sar!2s"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <form action="" class="contact-form">
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="name"
+                  required
+                /><i class="fa fa-user"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="email"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="email"
+                  required
+                /><i class="fa fa-envelope"></i>
+              </div>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  placeholder="subject"
+                  required
+                /><i class="fa fa-book"></i>
+              </div>
+              <div class="form-group">
+                <textarea
+                  type="text"
+                  name=""
+                  id=""
+                  class="form-control"
+                  rows="9"
+                  placeholder="message"
+                  required
+                ></textarea
+                ><i class="fa fa-comment"></i>
+              </div>
+              <button type="submit" class="btn btn-primary">
+                Send Message Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTERE -->
+    <footer class="footer">
+      <div class="container">
+        <p>
+          Copyright &copy; 2024 Adeeb Moualla :
+          <a href="https://github.com/adeeeb" target="_blank">Github</a>
+        </p>
+      </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
